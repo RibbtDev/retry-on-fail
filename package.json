@@ -1,5 +1,5 @@
 {
-  "name": "with-retry",
+  "name": "xretry",
   "version": "0.1.0",
   "description": "Retry an async (or sync) function with exponential backoff. Respects AbortSignal cancellation.",
   "keywords": ["retry", "exponential-backoff", "abort-signal", "async", "typescript"],
