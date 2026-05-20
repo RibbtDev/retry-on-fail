@@ -1,17 +1,17 @@
-# xretry
+# retry-on-fail
 
 Retry any function with exponential backoff. Zero dependencies, fully typed.
 
 ## Install
 
 ```sh
-npm install xretry
+npm install retry-on-fail
 ```
 
 ## Quick start
 
 ```ts
-import { withRetry } from "xretry";
+import { withRetry } from "retry-on-fail";
 
 const data = await withRetry(() =>
   fetch("https://api.example.com/users").then((r) => r.json())
