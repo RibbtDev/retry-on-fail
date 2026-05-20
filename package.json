@@ -1,0 +1,30 @@
+{
+  "name": "with-retry",
+  "version": "0.1.0",
+  "description": "Retry an async (or sync) function with exponential backoff. Respects AbortSignal cancellation.",
+  "keywords": ["retry", "exponential-backoff", "abort-signal", "async", "typescript"],
+  "author": "Rohit Kumar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RibbtDev/withRetry"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "rolldown -c && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "rolldown": "latest",
+    "typescript": "latest"
+  }
+}
