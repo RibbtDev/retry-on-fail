@@ -21,10 +21,12 @@
   "files": ["dist"],
   "scripts": {
     "build": "rolldown -c && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "rolldown": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vitest": "latest"
   }
 }
